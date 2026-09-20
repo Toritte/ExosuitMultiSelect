@@ -22,6 +22,4 @@ Supported game version: Steam build **24826606**, EXE **1.8.45317.0**. Game upda
 ## Credits and availability
 Thanks to CowboyBingus for Bingus Shared Loader and the Windows adapter used by this mod. Read [third-party notices](THIRD_PARTY.md) and [license status](LICENSE-STATUS.md) before redistribution; a project-wide open-source license has not been selected.
 
-The mod is intended to be free. Optional support: [Toritte on Patreon](https://www.patreon.com/cw/Toritte).
-
 AI disclosure: GPT-6 Astra assisted with research, implementation, debugging and documentation.
