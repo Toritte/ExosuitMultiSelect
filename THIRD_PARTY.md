@@ -4,7 +4,7 @@ Author: CowboyBingus. Required version: v15 / API 1.
 Download: https://ayakamods.com/mods/bingus-shared-loader.3861/
 Source and instructions: https://github.com/CowboyBingus/BingusSharedLoader
 
-Toritte reports that CowboyBingus requested that the loader not be bundled or redistributed, and that its download location be credited. This package does not include the loader runtime, dispatcher or startup replacement. Install it separately.
+CowboyBingus requested that the loader not be bundled or redistributed, and that its download location be credited. This package does not include the loader runtime, dispatcher or startup replacement. Install it separately.
 
 The archive format and addon declaration were studied from its build tooling at commit `836427cef78b8a67cf771c1f16291d93be921744`. This repository has a self-contained Python packager; the upstream loader source tree is not bundled.
 
