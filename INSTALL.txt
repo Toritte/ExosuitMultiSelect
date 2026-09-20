@@ -6,13 +6,17 @@ https://ayakamods.com/mods/bingus-shared-loader.3861/
 Official instructions: https://github.com/CowboyBingus/BingusSharedLoader
 The loader is not included and must not be redistributed in this package.
 
-Close Helldivers 2. Import the loader and this mod ZIP into Arsenal or HD2MM.
-Enable both and deploy. Follow the loader's priority instructions: Arsenal
-default priority = loader last; reversed priority = loader first.
-Restart the game.
-Select up to four different exosuits using the four normal stratagem slots.
+Installation : 
+1.  Close Helldivers2
+2.  Import the loader and this mod ZIP into Arsenal or HD2MM.
+3.  Enable both and deploy. Follow the loader's priority instructions:
+    You have to place this loader LAST (bottom of the list) with default priority, or FIRST if first-mod priority is enabled
+4.  Restart the game.
+Now you can select up to four different exosuits using the four normal stratagem slots.
 
-Uninstall: close the game, disable this mod, redeploy, restart.
+Uninstallation :
+Close the game, You must fully close the game to uninstall the mod.
+Disable this mod, purge OR deploy again then relaunch the game.
 Keep the loader enabled if other installed mods require it.
 
 Supported game version: Steam build 24826606 / EXE 1.8.45317.0.
