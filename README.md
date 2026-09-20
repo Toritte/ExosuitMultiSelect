@@ -9,20 +9,13 @@ The loader is not bundled or redistributed with this mod, as requested by its au
 
 1. Close the game. Download the mod ZIP from [Releases](https://github.com/Toritte/ExosuitMultiSelect/releases) once published.
 2. Import the loader ZIP and `Exosuit-MultiSelect-v0.2.zip` into Arsenal or HD2MM; enable both and deploy.
-3. Install Bingus Shared Loader v15 or newer separately
-	   You have to place this loader LAST (bottom of the list) with default priority, or FIRST if first-mod priority is enabled
-	   ( https://github.com/CowboyBingus/BingusSharedLoader/releases/latest )
-4. Deploy and enjoy.
+3. Follow the loader's priority instructions. In Arsenal's default priority, put the loader last; with reversed priority put it first.
+4. Start the game and select your exosuits.
 
-## Uninstallation
-To uninstall, close the game, You must fully close the game to uninstall the mod.
-Disable this mod, purge OR deploy again then relaunch the game.
-Keep the loader if another installed mod needs it.
+To uninstall, close the game, disable this mod, redeploy and restart. Keep the loader if another installed mod needs it. Details: [INSTALL.txt](INSTALL.txt).
 
-## Compatibility and validation
-Tested runtime: Steam build **24826606**, EXE **1.8.45317.0**.
-
-This changes a shared exosuit classification flag, See [validation](docs/VALIDATION.md).
+## Compatibility
+Supported game version: Steam build **24826606**, EXE **1.8.45317.0**. Game updates may require a mod update.
 
 [Build from source](CONTRIBUTING.md) · [Technical walkthrough](docs/TECHNICAL.md) · [Third-party dependencies](THIRD_PARTY.md) · [Release notes](docs/RELEASE_NOTES.md) · [Artwork](assets/ARTWORK.md)
 

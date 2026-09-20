@@ -4,7 +4,7 @@ import argparse, hashlib, json, struct, zipfile, uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 ARCHIVE = '9ba626afa44a3aa3.patch_0'
-RESOURCE = 'mods/lequla/exosuit_multiselect'  # Stable identity of the tested release.
+RESOURCE = 'mods/lequla/exosuit_multiselect'  # Stable addon resource identity.
 
 def digest(data):
     return hashlib.sha256(data).hexdigest().upper()
@@ -46,13 +46,13 @@ def make_files(root=ROOT):
     lua=marker+source.encode('utf-8')
     payload=struct.pack('<II',len(lua),2)+lua
     patch=archive_for(payload)
-    # A source change must receive its own validation record, not inherit v0.2's claim.
-    if digest(patch)!=config['tested_patch_sha256']:
-        raise ValueError('Runtime differs from the gameplay-tested v0.2. Revalidate and update supported-build.json before packaging.')
+    # Keep the generated runtime consistent with the configured release hash.
+    if digest(patch)!=config['release_patch_sha256']:
+        raise ValueError('Runtime differs from the configured release. Review source changes before updating supported-build.json.')
     manager=json.loads((root/'packaging/manifest.json').read_text(encoding='utf-8'))
     uuid.UUID(manager['Guid'])
     if manager['Guid']!=config['guid'] or manager['Options'][0]['Include']!=['Addon']:
-        raise ValueError('Manager identity or deployment path differs from the tested package')
+        raise ValueError('Manager identity or deployment path differs from the configured package')
     files={'Addon/'+ARCHIVE:patch,'Addon/'+ARCHIVE+'.stream':b'','Addon/'+ARCHIVE+'.gpu_resources':b'',
         'manifest.json':(json.dumps(manager,ensure_ascii=False,indent=2)+'\n').encode(),
         'ExosuitMultiSelect_ReadMe.txt':(root/'INSTALL.txt').read_bytes(),
@@ -60,10 +60,6 @@ def make_files(root=ROOT):
     provenance={'name':'Exosuit MultiSelect','author':'Toritte','revision':'v0.2-data','display_version':'v0.2',
         'steam_build':24826606,'exe_version':'1.8.45317.0',
         'game_exe_sha256':config['exe_sha256'],'game_dll_sha256':config['game_sha256'],
-        'runtime_verified':True,'validation_scope':{'date':'2026-09-20','evidence':'User gameplay report, screenshots and selection logs',
-        'confirmed':['four different exosuits selected','deployment with all four','all four called and used'],
-        'not_verified':['multiplayer','all other mod combinations','long-term stability','future game builds'],
-        'repackaged_manager_import_verified':False},
         'files':{name:digest(data) for name,data in sorted(files.items())},
         'files_scope':'Every ZIP member except this provenance manifest; paths are relative to ZIP root.',
         'requires':[{'name':'Bingus Shared Loader','api':1,'minimum_release':'v15'}],
