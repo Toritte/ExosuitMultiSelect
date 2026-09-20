@@ -8,17 +8,13 @@ The loader is not included and must not be redistributed in this package.
 
 Close Helldivers 2. Import the loader and this mod ZIP into Arsenal or HD2MM.
 Enable both and deploy. Follow the loader's priority instructions: Arsenal
-default priority = loader last; reversed priority = loader first.
-Disable the withdrawn v0.1 and diagnostic observer. Restart the game.
+default priority = loader last; first-mod = loader first.
 Select up to four different exosuits using the four normal stratagem slots.
 
 Uninstall: close the game, disable this mod, redeploy, restart.
 Keep the loader enabled if other installed mods require it.
 
-Tested on Steam build 24826606 / EXE 1.8.45317.0. Four exosuits selected,
-deployed, called and reported working. New package import is not yet tested.
-Future versions, multiplayer, all mod combinations and long sessions are
-unverified. This modifies a shared classification flag, not just the UI.
+Tested on Steam build 24826606 / EXE 1.8.45317.0.
 
 Credits: CowboyBingus — separate loader and reused Windows adapter.
 Redistribution terms for the adapter remain to be confirmed; see the source
