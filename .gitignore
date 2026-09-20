@@ -1,0 +1,13 @@
+/dist/
+/build/
+__pycache__/
+*.py[cod]
+.venv/
+*.log
+*.dmp
+*.bin
+*.zip
+.env
+.env.*
+.DS_Store
+Thumbs.db
