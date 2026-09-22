@@ -6,7 +6,7 @@ From the repository root:
 python -m unittest discover -s tests -v
 python scripts/build.py
 ```
-Output: `dist/Exosuit-MultiSelect-v0.2.zip` and `dist/SHA256SUMS.txt`. Installable releases contain this mod only. Obtain the loader separately.
+Output: `dist/Exosuit-MultiSelect-v0.3.zip` and `dist/SHA256SUMS.txt`. Installable releases contain this mod only. Obtain the loader separately.
 
 The builder reconstructs the archive from the three Lua sources and compact supported-build configuration, then checks it against the configured release archive SHA-256. It generates both manifests and verifies all listed files. Changes to gameplay sources intentionally fail this check until separately reviewed and validated; do not replace the expected hash just to silence the check.
 

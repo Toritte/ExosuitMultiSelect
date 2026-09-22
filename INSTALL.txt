@@ -1,4 +1,5 @@
-Exosuit MultiSelect v0.2 — Toritte
+Exosuit MultiSelect v0.3 — Toritte
+Allows Multiple Selection of Exosuits Once More Again.
 Repository: https://github.com/Toritte/ExosuitMultiSelect
 
 Requires Bingus Shared Loader v15 / API 1. Download separately:
@@ -19,11 +20,20 @@ Close the game, You must fully close the game to uninstall the mod.
 Disable this mod, purge OR deploy again then relaunch the game.
 Keep the loader enabled if other installed mods require it.
 
-Supported game version: Steam build 24826606 / EXE 1.8.45317.0.
+Change log :
+	v0.2 : Select up to four different exosuits in the existing four stratagem slots.
+		Requires Bingus Shared Loader v15 / API 1, installed separately.
+		Supports Steam build 25327279 / EXE 1.8.45850.0
+
+Supported game version: Steam build 25327279 / EXE 1.8.45850.0.
 Game updates may require a mod update.
 
 Credits: CowboyBingus — separate loader and reused Windows adapter.
 Redistribution terms for the adapter remain to be confirmed; see the source
 repository's THIRD_PARTY.md. No project-wide open-source license selected.
-Optional support: https://www.patreon.com/cw/Toritte
 AI assistance: GPT-6 Astra (research, implementation, debugging, documentation).
+
+All my mods will be available for free and opensource on Patreon.
+You can also support me there to cover development-related costs and allows me to keep working on new projects and updates.
+
+https://www.patreon.com/cw/Toritte
